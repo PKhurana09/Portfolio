@@ -4,68 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-
       <div class="nav-bar">
         <!-- Social Links -->
         <div class="links">
-            <img class="icon" src="assets/linkedin.png" alt="LinkedIn Logo" />
-            <img class="icon" src="assets/github.png" alt="Github Logo" />
-            <img class="icon" src="assets/icons8-youtube-48.png" alt="youtube Logo"/>
-            <img class="icon" src="assets/icons8-instagram-48.png" alt="Instagram Logo"/>
+          <img class="icon" src="assets/linkedin.png" alt="LinkedIn Logo" />
+          <img class="icon" src="assets/github.png" alt="Github Logo" />
+          <img class="icon" src="assets/icons8-youtube-48.png" alt="youtube Logo"/>
+          <img class="icon" src="assets/icons8-instagram-48.png" alt="Instagram Logo"/>
         </div>
 
         <!-- Contact Details -->
         <div class="contact-details">
-            <div class="contact-items">
-                <img class="icon" src="assets/icons8-phone-48.png" alt="Phone Logo"/>
-                <p>+91 7814139930</p>
-            </div>
-            <div class="contact-items">
-                <img class="icon" src="assets/icons8-gmail-24.png" alt="Gmail Logo"/>
-                <p>pranavkhurana69@gmail.com</p>
-            </div>
-            <div class="contact-items">
-                <img class="icon" src="assets/location-pin.png" alt="Address Logo"/>
-                <p>F-7, 531 Kashmir Avenue, Amritsar</p>
-            </div>
+          <div class="contact-items">
+            <img class="icon" src="assets/icons8-phone-48.png" alt="Phone Logo"/>
+            <p>+91 7814139930</p>
+          </div>
+          <div class="contact-items">
+            <img class="icon" src="assets/icons8-gmail-24.png" alt="Gmail Logo"/>
+            <p>pranavkhurana69@gmail.com</p>
+          </div>
+          <div class="contact-items">
+            <img class="icon" src="assets/location-pin.png" alt="Address Logo"/>
+            <p>F-7, 531 Kashmir Avenue, Amritsar</p>
+          </div>
         </div>
       </div>
 
       <div class="panel">
         <!-- This is sections 1 -->
         <div class="role">
-          <img class="icon" src="assets/app-development.png" alt="My role"/>
+          <img class="icon" src="assets/app-development.png" alt="My role" />
           <p>Software Engineer</p>
         </div>
 
         <!-- This is section 2 -->
         <!-- This is the section to different pages which will be setup later -->
-         <div class="pages">
+        <div class="pages">
           <p>Home</p>
           <p>Service</p>
           <p>Projects</p>
           <p>About</p>
           <p>Client</p>
           <p>Contact</p>
-         </div>
+        </div>
 
-         <!-- This is section 3 -->
-         <div class="discuss">
+        <!-- This is section 3 -->
+        <div class="discuss">
           <button>Discuss for Projects</button>
-         </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="hero-section">
+
+        <!-- Content Section -->
+        <div class="content">
+          <p>
+            This is your <br />
+            Software Engineer <br />
+            Pranav Khurana
+          </p>
+          <p>
+            I am a highly motivated Computer Science graduate from RMIT University
+            with a strong interest in software engineering and problem-solving. I
+            value integrity, honesty, responsibility, and collaboration, and I
+            enjoy working in team environments where ideas are shared openly and
+            innovation is encouraged. I actively spend my time strengthening my
+            technical skills by working on hands-on projects and learning across
+            areas such as software development, algorithms, cloud computing, and
+            AI fundamentals. I am currently preparing for Google Summer of Code
+            (GSoC) 2026, which reflects my long-term commitment to open-source
+            development and continuous learning. I am also expanding my skill set
+            through additional certifications in Java and cloud technologies while
+            building and refining real-world projects. I am currently open to
+            graduate and junior software engineering opportunities where I can
+            contribute, learn, and grow within a forward-thinking team.
+          </p>
+
+          <div class="buttons">
+            <button class="primary">Discuss for Projects</button>
+            <button class="secondary">View Portfolio</button>
+          </div>
+        </div>
+
+        <div class="image">
+          <img class="personal-image" src="assets/pranav.jpg" alt="My Photo"/>
+        </div>
       </div>
 
-    </header>
+      <!-- Below this is the new Section called Projects Section okay -->
+
+      <div class="projects">
+        <div class="text">
+          <h1>My Projects</h1>
+          <p>I have worked on various projects ranging from backend Services to full stack Projects</p>
+        </div>
+
+        <div class="boxes">
+          <div class="box1">
+            <img class="image" src="assets/Azul.webp" alt="Azul Game"/>
+            <p>Architected a modular OOP C++ system with clean software architecture simulating full Azul gameplay —
+              including game state management, turn handling, scoring logic & rule validation.</p>
+          </div>
+
+          <div class="box2">
+            <img class="image" src="assets/IMDB.png" alt="IMDB Website"/>
+            <p>Built backend services using Node.js to handle API requests, business logic & data processing for a
+               movie browsing platform.</p>
+          </div>
+
+          <div class="box3">
+            <img class="image" src="assets/MiRide.jpg" alt="MiRides System"/>
+            <p> Developed a Java console application for ride booking, modelled after platforms like Uber and Didi.</p>
+          </div>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer></footer>
   </body>
 </html>

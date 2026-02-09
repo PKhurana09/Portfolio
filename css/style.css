@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-bar {
@@ -75,4 +81,159 @@ body {
     border: 1px solid #ccc;
     background: linear-gradient(135deg, #2563eb, #7c3aed);
     color: white;
+}
+
+main {
+    flex: 1;
+    background-color: #0b0f19;
+    display: flex;
+    align-items: center;   /* vertical centering */
+    flex-direction: column;
+}
+
+/* HERO LAYOUT */
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 60px;
+}
+
+/* LEFT CONTENT */
+.content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* BIG INTRO TEXT */
+.content p:first-child {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+/* DESCRIPTION */
+.content p:nth-child(2) {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+/* PRIMARY BUTTON */
+button.primary {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+/* SECONDARY BUTTON */
+button.secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #475569;
+}
+
+/* RIGHT IMAGE */
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-image {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2563eb;
+}
+
+.projects{
+    color: white;
+}
+
+/* PROJECTS SECTION */
+.projects {
+    padding: 80px 80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Heading + description */
+.projects .text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.projects .text h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.projects .text p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Project cards container */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Individual project card */
+.boxes > div {
+    background-color: #111827;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.boxes > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Project images */
+.boxes img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Project description */
+.boxes p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d5db;
 }
