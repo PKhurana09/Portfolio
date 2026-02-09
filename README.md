@@ -1,2 +1,17 @@
-# Portfolio
-This is a personal portfolio website developed using HTML5 and CSS3. The goal of this project is to build a real-world static website while learning layout techniques, responsive design, and clean UI structuring. JavaScript functionality will be added in future updates.
+# Portfolio Website
+A personal portfolio website built using HTML and CSS.
+
+## Features
+- Responsive layout
+- Dark theme design
+- Sections: About, Projects, Contact
+
+## Tech Stack
+- HTML5
+- CSS3
+
+## Purpose
+Built to strengthen fundamentals of HTML and CSS before adding JavaScript.
+
+## Live Demo
+Will be adding this soon
